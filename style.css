@@ -1,0 +1,367 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector */
+p {
+    color: blue;
+    font-size: 18px;
+}
+
+/* Class Selector */
+.box {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+/* ID Selector */
+#header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+/* Grouping Selector */
+h1, h2, p {
+    text-align: center;
+}
+
+/* Descendant Selector */
+div p {
+    color: green;
+}
+
+/* Direct Child Selector */
+ul > li {
+    font-weight: bold;
+}
+
+/* Adjacent Sibling Selector */
+h2 + p {
+    color: red;
+}
+
+/* General Sibling Selector */
+h2 ~ p {
+    font-style: italic;
+}
+
+
+/* Named colors */
+.box1 {
+    background-color: tomato;
+}
+
+/* RGB */
+.box2 {
+    background-color: rgb(255, 99, 71);
+}
+
+/* RGBA */
+.box3 {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+/* HEX */
+.box4 {
+    background-color: #ff6347;
+}
+
+/* HSL */
+.box5 {
+    background-color: hsl(240, 100%, 50%);
+}
+
+/* HSLA */
+.box6 {
+    background-color: hsla(120, 100%, 50%, 0.3);
+}
+
+/* Background Color */
+.bg1 {
+    background-color: lightblue;
+}
+
+/* Background Image */
+.bg2 {
+    background-image: url("image.jpg");
+    background-size: cover;
+}
+
+/* No repeat */
+.bg3 {
+    background-image: url("pattern.png");
+    background-repeat: no-repeat;
+}
+
+/* Background Position */
+.bg4 {
+    background-image: url("pic.png");
+    background-position: center;
+}
+
+/* Background Attachment Fixed */
+.bg5 {
+    background-image: url("image.jpg");
+    background-attachment: fixed;
+}
+
+/* Shorthand */
+.bg6 {
+    background: url("image.jpg") no-repeat center/cover;
+}
+
+
+/* Border Styles */
+.border1 {
+    border: 2px solid black;
+}
+
+.border2 {
+    border: 3px dotted red;
+}
+
+.border3 {
+    border: 4px dashed blue;
+}
+
+/* Rounded Borders */
+.round1 {
+    border-radius: 10px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: coral;
+    border-radius: 50%;
+}
+
+/* Margin on all sides */
+.m1 {
+    margin: 20px;
+}
+
+/* Margin individual */
+.m2 {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+/* Margin shorthand (top right bottom left) */
+.m3 {
+    margin: 10px 20px 30px 40px;
+}
+
+/* Auto center */
+.center-box {
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* Padding All Sides */
+.p1 {
+    padding: 20px;
+}
+
+/* Padding Individual */
+.p2 {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+
+/* Padding Shorthand */
+.p3 {
+    padding: 10px 15px 20px 25px;
+}
+
+.box-model {
+    width: 300px;
+    padding: 20px;
+    border: 3px solid black;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.text1 {
+    color: #333;
+    text-align: center;
+}
+
+.text2 {
+    text-decoration: underline;
+}
+
+.text3 {
+    text-transform: uppercase;
+}
+
+.text4 {
+    letter-spacing: 2px;
+}
+
+.text5 {
+    line-height: 1.5;
+}
+
+.text6 {
+    text-shadow: 2px 2px 5px gray;
+}
+/* Basic font styling */
+.font1 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Google font example */
+.font2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+/* Block */
+.block {
+    display: block;
+}
+
+/* Inline */
+.inline {
+    display: inline;
+}
+
+/* Inline-block */
+.inline-block {
+    display: inline-block;
+    width: 150px;
+}
+
+/* None (Hide Element) */
+.hidden {
+    display: none;
+}
+
+/* Static */
+.static {
+    position: static;
+}
+
+/* Relative */
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+/* Absolute */
+.absolute {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+/* Fixed */
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Sticky */
+.sticky {
+    position: sticky;
+    top: 0;
+    background: yellow;
+}
+
+/* Hidden */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Scroll */
+.overflow-scroll {
+    overflow: scroll;
+}
+
+/* Auto */
+.overflow-auto {
+    overflow: auto;
+}
+
+/* X and Y */
+.overflow-xy {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Direction */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Alignment */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Space between */
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Wrap items */
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+.box {
+    animation: move 2s linear infinite;
+}
+/*There is an <h2> tag inside a parent element whose class is container.*/
+
+.container,h2{
+    color : red
+}
