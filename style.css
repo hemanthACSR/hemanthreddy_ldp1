@@ -365,3 +365,11 @@ h2 ~ p {
 .container,h2{
     color : red
 }
+
+.grid {
+    display: grid;
+    height: 300px;
+    justify-content: center; /* horizontal */
+    align-content: center;   /* vertical */
+}
+
