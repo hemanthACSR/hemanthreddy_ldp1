@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Travel Trip Booking</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+</head>
+
+<body>
+  <section id="overlay">
+    <h1>Book Your Dream Trip ✈️</h1>
+    
+    <form action="submit.html" method="POST">
+
+      <section class="name">
+        <label for="fullname">Your Full Name:</label>
+        <input type="text" name="fullname" id="fullname">
+      </section>
+      <hr>
+
+      <section class="password">
+        <label for="password">Create a Password:</label>
+        <input type="password" name="password" id="password">
+      </section>
+      <hr>
+
+      <section class="travelers">
+        <label for="travelers">How many travelers?</label>
+        <input type="number" name="travelers" id="travelers" min="1" max="10">
+      </section>
+      <hr>
+
+      <section class="budget">
+        <label for="budget">Your Trip Budget:</label>
+        <br>
+        <span>Low</span>
+        <input type="range" name="budget" id="budget" min="1" max="5" value="3">
+        <span>High</span>
+      </section>
+      <hr>
+
+      <section class="activities">
+        <span>Select preferred activities:</span><br>
+        <input type="checkbox" id="beach" name="activity" value="beach">
+        <label for="beach">Beach</label>
+
+        <input type="checkbox" id="hiking" name="activity" value="hiking">
+        <label for="hiking">Hiking</label>
+
+        <input type="checkbox" id="city" name="activity" value="city">
+        <label for="city">City Tour</label>
+      </section>
+      <hr>
+
+      <section class="travel-mode">
+        <span>Preferred travel mode:</span><br>
+        <input type="radio" id="flight" name="mode" value="flight">
+        <label for="flight">Flight</label>
+
+        <input type="radio" id="train" name="mode" value="train">
+        <label for="train">Train</label>
+
+        <input type="radio" id="car" name="mode" value="car">
+        <label for="car">Car</label>
+      </section>
+      <hr>
+
+      <section class="destination-select">
+        <label for="destination">Choose a destination:</label>
+        <select id="destination" name="destination">
+          <option value="maldives">Maldives</option>
+          <option value="switzerland">Switzerland</option>
+          <option value="singapore">Singapore</option>
+          <option value="dubai">Dubai</option>
+        </select>
+      </section>
+      <hr>
+
+      <section class="airport-choice">
+        <label for="airport">Select your departure airport:</label>
+        <input list="airports" id="airport" name="airport">
+        <datalist id="airports">
+          <option value="Hyderabad (HYD)"></option>
+          <option value="Bangalore (BLR)"></option>
+          <option value="Chennai (MAA)"></option>
+          <option value="Mumbai (BOM)"></option>
+        </datalist>
+      </section>
+      <hr>
+
+      <section class="notes">
+        <label for="notes">Any special requests?</label><br>
+        <textarea id="notes" name="notes" rows="3" cols="40"></textarea>
+      </section>
+      <hr>
+
+      <section class="submit">
+        <input type="submit" value="Book Trip">
+      </section>
+
+    </form>
+  </section>
+</body>
+</html>
